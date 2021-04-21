@@ -16,6 +16,23 @@
         <a href="#" class="navbar-brand">GitHub Finder</a>
       </div>
     </nav>
+    <div class="container searchContainer">
+      <div class="search card card-body">
+        <h1>Search GitHub Users</h1>
+        <p class="lead">
+          Enter a username to fetch a user profile and repositories.
+        </p>
+        <input
+          type="text"
+          id="searchUser"
+          class="form-control"
+          placeholder="GitHub Username..."
+        />
+      </div>
+      <br />
+      <div id="profile"></div>
+    </div>
+    <footer class="mt-5 p-3 text-center bg-light">GitHub Finder &copy</footer>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -23,7 +40,6 @@
     ></script>
     <script src="github.js"></script>
     <script src="ui.js"></script>
-
     <script src="app.js"></script>
   </body>
 </html>
